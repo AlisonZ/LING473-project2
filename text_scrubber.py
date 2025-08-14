@@ -27,6 +27,7 @@ def get_tokens():
         return  file.read().split()
             
 def main():
+    # run through all files in the corpora from the top folder structure
     tokens = get_tokens()
     tokens_map =validate_and_count_tokens(tokens)
     print_tally(tokens_map)
